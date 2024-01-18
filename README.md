@@ -1,5 +1,5 @@
 # TaskManagement
-Create Task managment App using react-beautiful-dnd
+Create Task managment App using react-beautiful-dnd.
 Allow users to add tasks, organize them into different
 categories(Todo, Progress, Completed), and implement 
 drag-and-drop functionality to reorder tasks within each category.
