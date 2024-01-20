@@ -45,7 +45,7 @@ const TodoItem = ({todo,index,category}) => {
           <div
         className={`flex flex-start items-start flex-col rounded-lg px-4 py-3 mb-2
            cursor-pointer  text-black ${
-            todo.completed ? "bg-[#c6e9a7]" : " bg-gray-300" } ${snapshot.isDragging ? 'bg-gray-400' : 'bg-gray-200'}` 
+            todo.completed ? "bg-[#c6e9a7]" : " bg-gray-200" } ${snapshot.isDragging ? 'bg-gray-400' : 'bg-gray-200'}` 
             }
             
         {...provided.draggableProps}

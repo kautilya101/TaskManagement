@@ -143,9 +143,9 @@ const Board = () => {
     <TodoContextProvider value={{todos,addTodo,editTodo,deleteTodo,toggleComplete}}>
     <div className=' min-h-screen py-8 bg-slate-200'> 
     <Header/> 
-    <div className='flex flex-row items-center ml-20 '>
+    {/* <div className='flex ml-20 '> */}
       <TodoForm/>
-    </div>
+    {/* </div> */}
     <DragDropContext onDragEnd={handleDragEnd}>
         <div className='flex h-[34rem] my-10 mx-20 gap-2'>
           <Column title={'To do'} todos={todos} id={'0'} category={categories[0]}/>
