@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { TodoItem } from '../Tasks';
 import { Droppable } from 'react-beautiful-dnd';
 

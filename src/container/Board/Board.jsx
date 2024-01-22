@@ -2,8 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { DragDropContext } from 'react-beautiful-dnd';
 import { TodoContextProvider } from '../../context'
 import Column from '../../components/Column/Column';
-import { TodoForm, TodoItem } from '../../components/Tasks';
-import { Link, useNavigate } from 'react-router-dom'
+import { TodoForm, TodoItem } from '../../components/Tasks'
 import Header from '../Header/Header';
 const Board = () => {
 

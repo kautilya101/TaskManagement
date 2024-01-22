@@ -7,17 +7,11 @@ const TodoItem = ({todo,index,category}) => {
     const [isTodoEditable, setIsTodoEditable] = useState(false);
     const [todoMsg, setTodoMsg] = useState(todo.todo);
     const [priority, setPriority] = useState(todo.priority);
-    const {editTodo, deleteTodo, toggleComplete} = useTodo();
+    const {editTodo, deleteTodo} = useTodo();
 
     const updateTodo = () => {
         editTodo(todo.id,{...todo,todo: todoMsg});
         setIsTodoEditable(false);
-    }
-
-
-
-    const toggleCompleted = () => {
-        toggleComplete(todo.id);
     }
 
     function getStyle(style, snapshot) {
@@ -25,15 +19,13 @@ const TodoItem = ({todo,index,category}) => {
         return style;
       }
       const { moveTo, curve, duration } = snapshot.dropAnimation;
-      // move to the right spot
+  
       const translate = `translate(${moveTo.x}px, ${moveTo.y}px)`;
-      // add a bit of turn for fun
-    
-      // patching the existing style
+
       return {
         ...style,
         transform: `${translate}`,
-        // slowing down the drop because we can
+
         transition: `all ${curve} ${duration}s`,
 
       };
